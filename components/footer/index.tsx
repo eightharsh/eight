@@ -11,7 +11,7 @@ const Footer = () => {
         >
           eightharsh.com
         </a>{' '}
-        · Chase the Unthinkable
+        · Chase the Unthinkable 
       </div>
     </div>
   )

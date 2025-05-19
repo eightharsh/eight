@@ -81,7 +81,7 @@ const activities = [
     title: 'part of the community',
     start: '2024',
     end: 'present',
-    responsibilities: ['Organized the monthly meetups', 'Talked about Azure as a speaker']
+    responsibilities: ['Nothing']
   },
   
 ]
