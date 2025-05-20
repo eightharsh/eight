@@ -73,12 +73,12 @@ export default function Home() {
 
       {/* YouTube Embed Section */}
       <Card>
-        <h2 className="pb-2 text-gray-9 capitalize">Featured Video</h2>
+        <h2 className="pb-2 text-gray-9 capitalize">Intro</h2>
         <div className="relative w-full overflow-hidden rounded-xl border border-gray-4 shadow-sm pt-[56.25%]">
           <iframe
             className="absolute left-0 top-0 h-full w-full"
             src="https://www.youtube.com/embed/yIz0Cz4r8cs?rel=0&modestbranding=1&controls=1&showinfo=0"
-            title="Custom YouTube Player"
+            title=" YouTube Player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
