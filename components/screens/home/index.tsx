@@ -21,6 +21,7 @@ const projects = [
 export default function Home() {
   return (
     <div className="flex flex-col gap-6">
+      {/* Intro Section */}
       <div className="flex flex-col gap-8 md:flex-row md:items-center">
         <ArcCard>
           <div className="relative grid w-full grid-rows-[340px_60px] gap-4 rounded border border-gray-5 bg-[#fff] p-4 md:w-[240px] md:grid-rows-[220px_60px]">
@@ -35,23 +36,22 @@ export default function Home() {
         </ArcCard>
         <div>
           <p className="mb-4">
-  Hello, I'm <strong>HARSH</strong>, a Student specializing in JavaScript, including its ecosystem like React, Next.js, and Node.js.
-  I also work with Go on occasion. This is my digital garden where I share my interest in a little of everything that crosses my mind, but mostly
-  about technology. Visit my official site at{' '}
-  <a href="https://eightharsh.com" className="text-blue-600 underline" target="_blank" rel="noopener noreferrer">
-    eightharsh.com
-  </a>.
-</p>
+            Hello, I'm <strong>HARSH</strong>, a Student specializing in JavaScript, including its ecosystem like React, Next.js, and Node.js.
+            I also work with Go on occasion. This is my digital garden where I share my interest in a little of everything that crosses my mind, but mostly
+            about technology. Visit my official site at{' '}
+            <a href="https://eightharsh.com" className="text-blue-600 underline" target="_blank" rel="noopener noreferrer">
+              eightharsh.com
+            </a>.
+          </p>
           <p className="mb-4">
             I am a student at{' '}
             <a href="https://sjcem.edu.in/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">
               SJCEM
-            </a>
-            , where I am pursuing my degree in Computer Science and Engineering. I am passionate about technology and love to learn new things.
+            </a>, where I am pursuing my degree in Computer Science and Engineering. I am passionate about technology and love to learn new things.
             I am also a part of the{' '}
             <a href="https://kasamshaikh.com/community/dear-azure" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">
               Dear Azure
-            </a>
+            </a>.
           </p>
           <p className="mb-4">Connect with me on:</p>
           <nav className="flex flex-col flex-wrap gap-1 md:flex-row">
@@ -70,6 +70,24 @@ export default function Home() {
           </nav>
         </div>
       </div>
+
+      {/* YouTube Embed Section */}
+      <Card>
+        <h2 className="pb-2 text-gray-9 capitalize">Featured Video</h2>
+        <div className="relative w-full overflow-hidden rounded-xl border border-gray-4 shadow-sm pt-[56.25%]">
+          <iframe
+            className="absolute left-0 top-0 h-full w-full"
+            src="https://www.youtube.com/embed/yIz0Cz4r8cs?rel=0&modestbranding=1&controls=1&showinfo=0"
+            title="Custom YouTube Player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          />
+        </div>
+      </Card>
+
+      {/* Projects Section */}
       <Card>
         <h2 className="py-2 text-gray-9 capitalize">Side projects</h2>
         <div className="flex flex-col gap-2">
@@ -87,6 +105,8 @@ export default function Home() {
           ))}
         </div>
       </Card>
+
+      {/* Writing Section */}
       <Card>
         <Link href="/w" prefetch={true} className="flex justify-between text-primary">
           <h2 className="py-2 capitalize">Writing ⇢</h2>
